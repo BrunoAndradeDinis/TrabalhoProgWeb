@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  translate: 0.3 easy;
+}
+
+.cabecalho{
+  text-align: center;
+}
+
+.tabela__principal{
+  background-color: rgba(170, 200, 200, 0.6);
+  margin: 0 .5rem;
+  padding: .5rem;
+}
+
+#tabela thead{
+  background-color: #0c0c0c;
+  color: aliceblue;
+}
+#tabela tfoot{
+  background-color: rgba(000,000,000, 0.8);
+  color: aliceblue;
+}
+
+table#tabela tbody tr:hover{
+  background-color: rgba(000,000,000, 0.1);
+}
