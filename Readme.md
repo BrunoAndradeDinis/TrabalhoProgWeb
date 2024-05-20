@@ -20,7 +20,7 @@ O projeto de página única tem as seguintes funcionalidades vinculadas a tabela
 ## :wrench: Tecnologias utilizadas
 
 ### IDE
-  - Visual Studio Code (VScode)
+  	- Visual Studio Code (VScode)
 ### Bibliotecas
 	- DataTables 
 	- JQuery
@@ -31,7 +31,7 @@ O projeto de página única tem as seguintes funcionalidades vinculadas a tabela
 
 Caso queira inicializar no seu PC bastar dar um `git clone ` no diretório de sua escolha.
 
-```git clone https://github.com/BrunoAndradeDinis/TrabalhoProgWeb.git```
+	- git clone https://github.com/BrunoAndradeDinis/TrabalhoProgWeb.git
 
 Ou se prefirir é só acessar o link para visualizar a página em execução: https://brunoandradedinis.github.io/TrabalhoProgWeb/
 
@@ -51,4 +51,4 @@ Ou se prefirir é só acessar o link para visualizar a página em execução: ht
 
 ## :dart: Status do projeto
 
-- Finalizado :check: 
+- Finalizado ✅ 
