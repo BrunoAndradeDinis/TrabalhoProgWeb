@@ -1,3 +1,4 @@
+// Puxando os dados da API para tratar 
 async function fetchDados() {
   try {
     const url = 'https://countries-states-and-cities.p.rapidapi.com/countries';
@@ -9,7 +10,7 @@ async function fetchDados() {
       method: 'GET',
       headers: headers,
     });
-
+    // Atualizando os dados ocm .map para tratar com o DataTable
     const paises = await response.json();
       return paises.list.map(pais => ({
         id: `${pais.id ? pais.id : 'Sem informação'}`,
@@ -28,8 +29,9 @@ async function fetchDados() {
 }
 
 export async function tabela() {
-
-  const paises = await fetchDados();
+  const paises = await fetchDados(); // Salvando os dados puxados na const
+  
+  // Utilizando os dados tratados para incrementar na nas tr td da tbody
   $('#tabela').DataTable( {
     data: paises,
     columns: [
@@ -45,3 +47,12 @@ export async function tabela() {
 })
 }
 
+// Utilizando estilização e animação para um visual menos estático no carregamento dos dados na página
+export function loading(){
+  $('.loader').toggleClass('oculto')
+  $('.tabela__principal').toggleClass('oculto')
+  $('#tabela').toggleClass('oculto')
+  $('tbody tr').ready(()=>{
+    $('thead').toggleClass('oculto')
+  })
+}

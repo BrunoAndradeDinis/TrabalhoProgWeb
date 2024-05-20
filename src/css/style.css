@@ -1,7 +1,11 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: .2rem;
   translate: 0.3 easy;
+}
+
+body{
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .cabecalho{
@@ -9,20 +13,49 @@
 }
 
 .tabela__principal{
-  background-color: rgba(170, 200, 200, 0.6);
   margin: 0 .5rem;
   padding: .5rem;
+  overflow: scroll;
+  scrollbar-width: 0;
+}
+
+.tabela__principal::-webkit-scrollbar{
+  display: none;
 }
 
 #tabela thead{
   background-color: #0c0c0c;
   color: aliceblue;
 }
-#tabela tfoot{
-  background-color: rgba(000,000,000, 0.8);
-  color: aliceblue;
-}
 
-table#tabela tbody tr:hover{
+#tabela tbody tr:hover{
   background-color: rgba(000,000,000, 0.1);
 }
+
+.oculto{
+  display: none;
+}
+
+.animate__fadeOut{
+  animation: fadeOut;
+  animation-duration: 2s;
+}
+.animate__fadeIn{
+  animation: fadeIn;
+  animation-duration: 3s;
+}
+
+/* Animação loading enquanto puxa os dados */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+  margin: 2rem auto 0;
+  padding: 0 auto;
+  animation-duration: 2s;
+}
+
+@keyframes l1 {to{transform: rotate(.5turn)}}
